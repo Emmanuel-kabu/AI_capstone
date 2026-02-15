@@ -1,0 +1,15 @@
+order_id,customer_name,email,product,quantity,unit_price,order_date,shipping_country,payment_method,status,total_amount
+1001,John Smith,john.smith@email.com,Laptop,1.0,999.99,2025-01-15,USA,credit_card,completed,999.99
+1002,Jane Doe,jane.doe@email.com,Mouse,3.0,29.99,2025-01-16,Canada,paypal,completed,89.97
+1004,Alice Brown,alice.brown@email.com,Monitor,1.0,349.99,2025-01-18,USA,debit_card,pending,349.99
+1006,Eva Martinez,eva.m@email.com,Mouse,1.0,29.99,2025-01-20,France,paypal,shipped,29.99
+1007,Frank Lee,frank.lee@email.com,Headphones,1.0,149.99,2025-01-21,USA,credit_card,completed,149.99
+1009,Grace Kim,grace.kim@email.com,Laptop,1.0,999.99,2025-01-23,Japan,credit_card,pending,999.99
+1011,Ivy Chen,ivy.chen@email.com,Mouse,2.0,29.99,2025-01-25,Australia,credit_card,shipped,59.98
+1013,John Smith,john.smith@email.com,Laptop,1.0,999.99,2025-01-15,USA,credit_card,completed,999.99
+1014,Karen White,karen.w@email.com,Keyboard,3.0,79.99,2025-01-28,Germany,paypal,completed,239.97
+1018,Oscar Rivera,oscar.r@email.com,Headphones,1.0,149.99,2025-02-02,Canada,credit_card,completed,149.99
+1020,Quinn Adams,quinn.a@email.com,Mouse,2.0,29.99,2025-02-04,USA,debit_card,cancelled,59.98
+1021,Rita Gomez,rita.g@email.com,Laptop,1.0,999.99,2025-02-05,Mexico,credit_card,completed,999.99
+1022,Sam Taylor,sam.t@email.com,Monitor,1.0,349.99,2025-02-06,USA,paypal,pending,349.99
+1023,Tina Brown,tina.b@email.com,Headphones,3.0,149.99,2025-02-07,Canada,credit_card,shipped,449.97

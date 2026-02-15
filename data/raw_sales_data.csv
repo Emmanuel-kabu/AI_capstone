@@ -1,0 +1,26 @@
+order_id,customer_name,email,product,quantity,unit_price,order_date,shipping_country,payment_method,status
+1001,John Smith,john.smith@email.com,Laptop,1,999.99,2025-01-15,USA,credit_card,completed
+1002,Jane Doe,jane.doe@email.com,Mouse,3,29.99,2025-01-16,Canada,paypal,completed
+1003,Bob Wilson,,Keyboard,2,79.99,2025/01/17,UK,credit_card,completed
+1004,Alice Brown,alice.brown@email.com,Monitor,1,349.99,2025-01-18,USA,debit_card,pending
+1005,Charlie Davis,charlie@email,Laptop,-2,999.99,2025-01-19,Germany,credit_card,completed
+1006,Eva Martinez,eva.m@email.com,Mouse,1,29.99,01-20-2025,France,paypal,shipped
+1007,Frank Lee,frank.lee@email.com,Headphones,1,149.99,2025-01-21,USA,credit_card,completed
+1008,,unknown@email.com,Keyboard,5,79.99,2025-01-22,Canada,debit_card,completed
+1009,Grace Kim,grace.kim@email.com,Laptop,1,999.99,2025-01-23,Japan,credit_card,pending
+1010,Henry Park,henry.park@email.com,Monitor,0,349.99,2025-01-24,USA,paypal,completed
+1011,Ivy Chen,ivy.chen@email.com,Mouse,2,29.99,2025-01-25,Australia,credit_card,shipped
+1012,Jack Brown,jack@email.com,Headphones,1,-149.99,2025-01-26,UK,debit_card,completed
+1013,John Smith,john.smith@email.com,Laptop,1,999.99,2025-01-15,USA,credit_card,completed
+1014,Karen White,karen.w@email.com,Keyboard,3,79.99,2025-01-28,Germany,paypal,COMPLETED
+1015,Leo Nguyen,leo.n@email.com,Mouse,10000,29.99,2025-01-29,France,credit_card,pending
+1016,Mia Johnson,mia.j@email.com,Laptop,1,999.99,2025-01-30,,credit_card,completed
+1017,Nina Patel,nina.patel@email.com,Monitor,2,349.99,2025-02-01,USA,unknown_method,shipped
+1018,Oscar Rivera,oscar.r@email.com,Headphones,1,149.99,2025-02-02,Canada,credit_card,completed
+1019,Paula Scott,paula.s@email.com,Keyboard,NULL,79.99,2025-02-03,UK,paypal,completed
+1020,Quinn Adams,quinn.a@email.com,Mouse,2,29.99,2025-02-04,USA,debit_card,cancelled
+1021,Rita Gomez,rita.g@email.com,Laptop,1,999.99,2025-02-05,Mexico,credit_card,completed
+1022,Sam Taylor,sam.t@email.com,Monitor,1,349.99,2025-02-06,USA,paypal,pending
+1023,Tina Brown,tina.b@email.com,Headphones,3,149.99,2025-02-07,Canada,credit_card,shipped
+1024,Uma Patel,,Mouse,1,29.99,2025-02-08,India,debit_card,completed
+1025,Victor Wu,victor.wu@email.com,Keyboard,2,79.99,2025-13-09,USA,credit_card,completed

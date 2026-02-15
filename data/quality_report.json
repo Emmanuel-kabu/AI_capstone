@@ -1,0 +1,133 @@
+{
+  "pipeline_name": "sales_data_quality_pipeline",
+  "run_timestamp": "2026-02-15T13:34:52.346178",
+  "spec_generated_by": "Chat AI (Claude)",
+  "summary": {
+    "total_input_rows": 25,
+    "rows_after_dedup": 25,
+    "clean_rows": 14,
+    "flagged_rows": 11,
+    "pass_rate_pct": 56.0,
+    "total_issues_found": 9
+  },
+  "issues": [
+    {
+      "rule_id": "R002",
+      "rule_name": "null_check",
+      "column": "customer_name",
+      "rows_affected": 1,
+      "sample_rows": [
+        7
+      ],
+      "detail": "Column 'customer_name' has 1 null/empty value(s)"
+    },
+    {
+      "rule_id": "R002",
+      "rule_name": "null_check",
+      "column": "email",
+      "rows_affected": 2,
+      "sample_rows": [
+        2,
+        23
+      ],
+      "detail": "Column 'email' has 2 null/empty value(s)"
+    },
+    {
+      "rule_id": "R002",
+      "rule_name": "null_check",
+      "column": "shipping_country",
+      "rows_affected": 1,
+      "sample_rows": [
+        15
+      ],
+      "detail": "Column 'shipping_country' has 1 null/empty value(s)"
+    },
+    {
+      "rule_id": "R006",
+      "rule_name": "standardize_dates",
+      "column": "order_date",
+      "rows_affected": 1,
+      "sample_rows": [
+        24
+      ],
+      "sample_values": [
+        "2025-13-09"
+      ],
+      "detail": "1 unparseable / invalid date(s)"
+    },
+    {
+      "rule_id": "R008",
+      "rule_name": "normalize_status",
+      "column": "status",
+      "rows_affected": 1,
+      "detail": "1 status value(s) normalized to lowercase"
+    },
+    {
+      "rule_id": "R003",
+      "rule_name": "email_format_validation",
+      "column": "email",
+      "rows_affected": 3,
+      "sample_rows": [
+        2,
+        4,
+        23
+      ],
+      "sample_values": [
+        NaN,
+        "charlie@email",
+        NaN
+      ],
+      "detail": "3 invalid email(s) found"
+    },
+    {
+      "rule_id": "R004",
+      "rule_name": "positive_quantity",
+      "column": "quantity",
+      "rows_affected": 4,
+      "sample_rows": [
+        4,
+        9,
+        14,
+        18
+      ],
+      "sample_values": [
+        -2.0,
+        0.0,
+        10000.0,
+        NaN
+      ],
+      "detail": "4 row(s) with quantity outside [1, 1000]"
+    },
+    {
+      "rule_id": "R005",
+      "rule_name": "positive_price",
+      "column": "unit_price",
+      "rows_affected": 1,
+      "sample_rows": [
+        11
+      ],
+      "sample_values": [
+        -149.99
+      ],
+      "detail": "1 row(s) with non-positive price"
+    },
+    {
+      "rule_id": "R009",
+      "rule_name": "valid_payment_method",
+      "column": "payment_method",
+      "rows_affected": 1,
+      "sample_rows": [
+        16
+      ],
+      "sample_values": [
+        "unknown_method"
+      ],
+      "detail": "1 row(s) with invalid payment method"
+    }
+  ],
+  "output_files": {
+    "cleaned_data": "C:\\Users\\EmmanuelKabu\\OneDrive - AmaliTech gGmbH\\Desktop\\AI capstone\\data\\cleaned_sales_data.csv",
+    "flagged_data": "C:\\Users\\EmmanuelKabu\\OneDrive - AmaliTech gGmbH\\Desktop\\AI capstone\\data\\flagged_rows.csv",
+    "this_report": "C:\\Users\\EmmanuelKabu\\OneDrive - AmaliTech gGmbH\\Desktop\\AI capstone\\data\\quality_report.json"
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI-Powered Data Quality Pipeline — Workflow Diagram</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f5f5f5; margin: 40px; }
+        h1 { color: #1a237e; text-align: center; }
+        .mermaid { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); max-width: 900px; margin: 30px auto; }
+        .legend { max-width: 900px; margin: 20px auto; background: white; padding: 20px; border-radius: 12px; }
+        .legend h3 { color: #333; }
+        .legend table { width: 100%; border-collapse: collapse; }
+        .legend td, .legend th { padding: 8px 12px; text-align: left; border-bottom: 1px solid #eee; }
+        .step1 { color: #1565c0; font-weight: bold; }
+        .step2 { color: #2e7d32; font-weight: bold; }
+        .step3 { color: #e65100; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>AI-Powered Data Quality Pipeline — Workflow Diagram</h1>
+
+    <div class="mermaid">
+        flowchart TD
+            A["Raw CSV Dataset\n(raw_sales_data.csv)\n25 rows with quality issues"] -->|Input| B
+
+            subgraph STEP1["STEP 1: Chat AI - Claude / ChatGPT"]
+                B["Prompt: Profile this dataset\nand generate data quality\nrules as a JSON spec"]
+                B --> C["data_quality_spec.json\n10 quality rules\n14 transformation steps\nSchema definitions"]
+            end
+
+            C -->|"Handoff: JSON spec file"| D
+
+            subgraph STEP2["STEP 2: IDE AI - GitHub Copilot in VS Code"]
+                D["Prompt: Generate a Python\nETL pipeline that reads\nthis JSON spec and applies\nall quality rules"]
+                D --> E["etl_pipeline.py\nLoads spec dynamically\nValidates all 10 rules\nOutputs clean CSV + report"]
+            end
+
+            E -->|"Handoff: quality_report.json"| F
+
+            subgraph STEP3["STEP 3: CLI AI - Terminal / Copilot CLI"]
+                F["Run pipeline and summarize:\npython etl_pipeline.py\npython summarize_results.py"]
+                F --> G["CLI Summary Report\nPass rate percentage\nIssue breakdown\nAnomaly recommendations"]
+            end
+
+            G --> H["Final Outputs\ncleaned_sales_data.csv\nflagged_rows.csv\nquality_report.json\nCLI summary"]
+
+            style STEP1 fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+            style STEP2 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+            style STEP3 fill:#fff3e0,stroke:#e65100,stroke-width:2px
+            style A fill:#fce4ec,stroke:#c62828
+            style H fill:#e8eaf6,stroke:#283593
+    </div>
+
+    <div class="legend">
+        <h3>Workflow Legend</h3>
+        <table>
+            <tr><th>Step</th><th>AI UX Type</th><th>Tool</th><th>Input</th><th>Output (Handoff)</th></tr>
+            <tr><td class="step1">Step 1</td><td>Chat AI</td><td>Claude / ChatGPT</td><td>Raw CSV + prompt</td><td>data_quality_spec.json</td></tr>
+            <tr><td class="step2">Step 2</td><td>IDE AI</td><td>GitHub Copilot (VS Code)</td><td>JSON spec from Step 1</td><td>etl_pipeline.py + summarize_results.py</td></tr>
+            <tr><td class="step3">Step 3</td><td>CLI AI</td><td>Copilot in Terminal</td><td>Pipeline execution</td><td>CLI summary + cleaned outputs</td></tr>
+        </table>
+    </div>
+</body>
+</html>

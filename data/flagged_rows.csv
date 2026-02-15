@@ -1,0 +1,12 @@
+order_id,customer_name,email,product,quantity,unit_price,order_date,shipping_country,payment_method,status,_null_flag,_date_valid,_email_valid,_qty_valid,_price_valid,_payment_valid,total_amount
+1003,Bob Wilson,,Keyboard,2.0,79.99,2025-01-17,UK,credit_card,completed,True,True,False,True,True,True,159.98
+1005,Charlie Davis,charlie@email,Laptop,-2.0,999.99,2025-01-19,Germany,credit_card,completed,False,True,False,False,True,True,-1999.98
+1008,,unknown@email.com,Keyboard,5.0,79.99,2025-01-22,Canada,debit_card,completed,True,True,True,True,True,True,399.95
+1010,Henry Park,henry.park@email.com,Monitor,0.0,349.99,2025-01-24,USA,paypal,completed,False,True,True,False,True,True,0.0
+1012,Jack Brown,jack@email.com,Headphones,1.0,-149.99,2025-01-26,UK,debit_card,completed,False,True,True,True,False,True,-149.99
+1015,Leo Nguyen,leo.n@email.com,Mouse,10000.0,29.99,2025-01-29,France,credit_card,pending,False,True,True,False,True,True,299900.0
+1016,Mia Johnson,mia.j@email.com,Laptop,1.0,999.99,2025-01-30,,credit_card,completed,True,True,True,True,True,True,999.99
+1017,Nina Patel,nina.patel@email.com,Monitor,2.0,349.99,2025-02-01,USA,unknown_method,shipped,False,True,True,True,True,False,699.98
+1019,Paula Scott,paula.s@email.com,Keyboard,,79.99,2025-02-03,UK,paypal,completed,False,True,True,False,True,True,
+1024,Uma Patel,,Mouse,1.0,29.99,2025-02-08,India,debit_card,completed,True,True,False,True,True,True,29.99
+1025,Victor Wu,victor.wu@email.com,Keyboard,2.0,79.99,,USA,credit_card,completed,False,False,True,True,True,True,159.98
